@@ -1,0 +1,81 @@
+#product {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  background-color: #fff;
+  color: #333333;
+  height: 100vh;
+  overflow-x: visible;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+}
+.products {
+  display: flex;
+  position: relative;
+  top: 30vh;
+  flex-direction: row;
+  margin: 10vh 0 0 200vw;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: scroll;
+  width: min-content;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+}
+.products-description {
+  position: absolute;
+  text-align: center;
+  width: 95%;
+}
+.products-description > h2 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 80px;
+}
+.products-description > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+.product > img {
+  border-radius: 100%;
+  margin-bottom: 5vh;
+}
+.product > h3 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 50px;
+}
+.product > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+@media only screen and (min-width: 1000px) {
+  #product {
+    justify-content: center;
+    height: 100vh;
+  }
+  .products-description {
+    position: static;
+    width: 60%;
+  }
+  .products {
+    position: static;
+    width: fit-content;
+    margin: 10vh 0 0 0;
+    overflow: hidden;
+  }
+  .product {
+    width: 25vw;
+  }
+  .product:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}

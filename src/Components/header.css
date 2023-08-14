@@ -1,0 +1,81 @@
+header {
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(47, 47, 47, 0.6);
+}
+.pc-nav {
+  display: none;
+}
+.burger-menu-btn {
+  display: fixed;
+}
+.nav-btn {
+  color: #e3e3e3;
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  padding: 5px;
+}
+.mobile-nav {
+  position: fixed;
+  padding: 10px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 999;
+  width: 50%;
+  background-color: #2f2f2f;
+  background-image: url("./images/home-decoration-full.png");
+  background-size: auto 100% cover;
+  background-position: 10% 200%;
+  background-repeat: no-repeat;
+}
+.mobile-nav div {
+  border-bottom: 2px #ffc200 solid;
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  header {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+  .site-logo {
+    position: relative;
+    flex: 1;
+    margin-left: 10%;
+  }
+  .site-logo img {
+    padding: 5px;
+    box-shadow: 3px 3px 20px black;
+    background-color: rgba(47, 47, 47, 0.5);
+    border-radius: 10px;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .pc-nav {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: bottom;
+    background-color: rgba(47, 47, 47, 0.5);
+    box-shadow: 3px 3px 20px black;
+    border-radius: 10px;
+    margin-right: 5%;
+  }
+  header > .search-btn {
+    display: none;
+  }
+}
